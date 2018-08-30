@@ -9,3 +9,7 @@ A script that aids in maximum compression!
      robust library once other formats are in the queue.
 
 Feel free to send me fixes if you see bugs in the syntax; nothing is perfect yet...
+
+  -*Credits*-
+
+Paq8px : https://github.com/hxim/paq8px
