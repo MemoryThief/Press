@@ -1,7 +1,7 @@
 @echo off
 Title="Press, Paq8px161    ^|    Compressing %~n1  ^(Please be patient!^)" & CLS & color 1A && SETLOCAL
 ::Check to see if input is a compressed file to decompress, otherwise continue...
-If [%1]==[*.paq8px161] goto :Decompress & echo Decompression Mode || echo Compression Mode
+If "%~x1" == ".paq8px161" goto :Decompress & echo Decompression Mode || echo Compression Mode
 ::Check to see if dictionarys exist, otherwise extract from the .exe...
 If Exist english.dic echo Dictionary Found! || type paq8px161.exe:english.dic > english.dic
 If Exist english.exp echo Expressions Found! || type paq8px161.exe:english.exp > english.exp
